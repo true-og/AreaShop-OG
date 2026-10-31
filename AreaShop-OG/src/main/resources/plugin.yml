@@ -5,7 +5,7 @@ description: "Selling and renting WorldGuard regions to your players, highly con
 depend: [DiamondBank-OG, LuckPerms, WorldGuard, WorldEdit]
 softdepend: [Multiverse-Core, Essentials, Utilities-OG]
 authors: [NLThijs48, md5sha256, Dartanman]
-website: https://github.com/true-og/AreaShop-OG
+website: https://git.trueog.net/trueog/AreaShop-OG
 #commands:
 #  AreaShop-OG:
 #    description: 'For all commands use /as help.'
