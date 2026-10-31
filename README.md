@@ -16,7 +16,7 @@ permission namespace (`areashop.*`) are unchanged.
 ### Economy and permissions
 
 - **Diamonds instead of Vault money** — the Vault dependency is gone. Every rent, extend, buy, resell and refund goes
-  through [DiamondBank-OG](https://github.com/true-og/DiamondBank-OG), so shop payments come out of (and go back into)
+  through [DiamondBank-OG](https://git.trueog.net/trueog/DiamondBank-OG), so shop payments come out of (and go back into)
   a player's diamond bank and show up in their bank history. Prices are shown as `12.5 Diamonds`, where the fractional
   digit is diamond shards (9 shards = 1 diamond).
 - **LuckPerms instead of Vault permissions** — rank and limit lookups talk to LuckPerms 5.5 directly.
@@ -70,13 +70,13 @@ an existing `config.yml` are rebranded automatically on startup, as long as they
 * Bukkit/Spigot 1.19.4 or newer (hybrids such as Mohist are not supported)
 * [WorldGuard](https://dev.bukkit.org/bukkit-plugins/worldguard/): 7.0.7 or newer
 * [WorldEdit](https://dev.bukkit.org/bukkit-plugins/worldedit/): 7.2.12 or newer
-* [DiamondBank-OG](https://github.com/true-og/DiamondBank-OG): diamond-based economy provider
+* [DiamondBank-OG](https://git.trueog.net/trueog/DiamondBank-OG): diamond-based economy provider
 * [LuckPerms](https://luckperms.net/): 5.5 or newer
 
 ## Building
 
 ```
-git clone --recurse-submodules https://github.com/true-og/AreaShop-OG.git
+git clone --recurse-submodules https://git.trueog.net/trueog/AreaShop-OG.git
 cd AreaShop-OG
 ./gradlew build
 ```
