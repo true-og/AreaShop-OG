@@ -1,7 +1,7 @@
 # Compiling
 
 ## Clone the repo <br/>
-`git clone https://github.com/true-og/AreaShop-OG.git`
+`git clone https://git.trueog.net/trueog/AreaShop-OG.git`
 
 ## Compile a Jar
 This task may take a while as the dev environment for platform adapters in `adapters/platform` take a while to set up 
