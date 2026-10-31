@@ -102,14 +102,14 @@ subprojects {
                 from(components["java"])
                 pom {
                     scm {
-                        connection.set("scm:git:git://github.com/true-og/AreaShop-OG.git")
-                        developerConnection.set("scm:git:ssh://github.com/true-og/AreaShop-OG.git")
-                        url.set("https://github.com/true-og/AreaShop-OG/tree/dev/bleeding")
+                        connection.set("scm:git:https://git.trueog.net/trueog/AreaShop-OG.git")
+                        developerConnection.set("scm:git:https://git.trueog.net/trueog/AreaShop-OG.git")
+                        url.set("https://git.trueog.net/trueog/AreaShop-OG/src/branch/dev/bleeding")
                     }
                     licenses {
                         license {
                             name.set("GNU General Public License v3.0")
-                            url.set("https://github.com/true-og/AreaShop-OG/blob/dev/bleeding/LICENSE")
+                            url.set("https://git.trueog.net/trueog/AreaShop-OG/src/branch/dev/bleeding/LICENSE")
                         }
                     }
                 }
