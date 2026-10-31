@@ -751,6 +751,6 @@ greeting-bought: '%region% is bought by %player%.'
 greeting-resale: '%region% can be bought for %resellprice% from %player%.'
 
 update-playerNotify: <dark_green>Update from AreaShop-OG V%0% to AreaShop-OG V%1% available,
-  get the latest version at </dark_green><click:open_url:'https://github.com/true-og/AreaShop-OG/releases'><hover:show_text:'%lang:action|Go
+  get the latest version at </dark_green><click:open_url:'https://git.trueog.net/trueog/AreaShop-OG/releases'><hover:show_text:'%lang:action|Go
   to the AreaShop-OG Github Releases|%'><bold><dark_green>Github</dark_green></bold></hover></click><dark_green>
   (and leave a review).
