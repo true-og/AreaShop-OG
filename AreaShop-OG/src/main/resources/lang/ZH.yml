@@ -515,4 +515,4 @@
 "greeting-forsale": "区域商店：&2&l%region%&r可以花费&2&l%price%&r金币购买."
 "greeting-bought": "区域商店：&2&l%region%&r被&2&l%player%&r购买了."
 "greeting-resale": "区域商店：&2&l%region%&r可以找&2&l%player%&r购买&2&l%resaleprice%&r."
-"update-playerNotify": "[darkgreen]请更新AreaShop-OG 版本%0% 到 %1% 版本 , 获取最新版本 https://github.com/true-og/AreaShop-OG/releases."
+"update-playerNotify": "[darkgreen]请更新AreaShop-OG 版本%0% 到 %1% 版本 , 获取最新版本 https://git.trueog.net/trueog/AreaShop-OG/releases."
