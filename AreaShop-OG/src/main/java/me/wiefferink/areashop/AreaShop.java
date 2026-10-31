@@ -428,7 +428,7 @@ public final class AreaShop extends JavaPlugin implements AreaShopApi {
 
                         AreaShop.info("Update from AreaShop-OG V" + cleanVersion(result.getCurrentVersion())
                                 + " to AreaShop-OG V" + cleanVersion(result.getLatestVersion())
-                                + " available, get the latest version at https://github.com/true-og/AreaShop-OG/releases");
+                                + " available, get the latest version at https://git.trueog.net/trueog/AreaShop-OG/releases");
                         for (Player player : Utils.getOnlinePlayers()) {
 
                             notifyUpdate(player);
