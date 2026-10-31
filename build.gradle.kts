@@ -95,25 +95,4 @@ subprojects {
 
         withType(ProcessResources::class) { filteringCharset = encodingName }
     }
-
-    publishing {
-        publications {
-            create<MavenPublication>(project.name) {
-                from(components["java"])
-                pom {
-                    scm {
-                        connection.set("scm:git:https://git.trueog.net/trueog/AreaShop-OG.git")
-                        developerConnection.set("scm:git:https://git.trueog.net/trueog/AreaShop-OG.git")
-                        url.set("https://git.trueog.net/trueog/AreaShop-OG/src/branch/dev/bleeding")
-                    }
-                    licenses {
-                        license {
-                            name.set("GNU General Public License v3.0")
-                            url.set("https://git.trueog.net/trueog/AreaShop-OG/src/branch/dev/bleeding/LICENSE")
-                        }
-                    }
-                }
-            }
-        }
-    }
 }
