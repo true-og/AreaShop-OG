@@ -554,4 +554,4 @@
 "greeting-forsale": "%region% puede ser comprada por %price%."
 "greeting-bought": "%region% está comprada por %player%."
 "greeting-resale": "%region% puede ser comprada por %resaleprice% al jugador %player%."
-"update-playerNotify": "[darkgreen]Hay una actualización disponible para AreaShop-OG (V%0% - %1%). Consigue la más reciente en https://github.com/true-og/AreaShop-OG/releases."
+"update-playerNotify": "[darkgreen]Hay una actualización disponible para AreaShop-OG (V%0% - %1%). Consigue la más reciente en https://git.trueog.net/trueog/AreaShop-OG/releases."
