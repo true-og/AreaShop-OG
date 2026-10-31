@@ -740,5 +740,5 @@ update-playerNotify:
   - "[darkgreen]Update from AreaShop-OG V%0% to AreaShop-OG V%1% available, get the latest version at "
   - "[bold]Github[/bold]"
   - "    hover: %lang:action|Go to the AreaShop-OG Github Releases|%"
-  - "    link: https://github.com/true-og/AreaShop-OG/releases"
+  - "    link: https://git.trueog.net/trueog/AreaShop-OG/releases"
   - " (and leave a review)."
