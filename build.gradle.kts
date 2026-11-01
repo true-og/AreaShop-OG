@@ -1,7 +1,6 @@
 plugins {
     java
     `java-library`
-    `maven-publish`
     id("io.papermc.paperweight.userdev") version "1.5.11" apply false
     id("com.github.spotbugs") version "5.1.3"
     id("com.diffplug.spotless") version "8.1.0"
@@ -31,7 +30,7 @@ spotless {
 subprojects {
 
     // The libs/ submodules (e.g. DiamondBank-OG) are self-contained builds with their own
-    // Kotlin/GraalVM toolchain and plugins; do not apply AreaShop's Java/publish config to them.
+    // Kotlin/GraalVM toolchain and plugins; do not apply AreaShop's Java config to them.
     if (project.path.startsWith(":libs")) {
         return@subprojects
     }
@@ -44,7 +43,6 @@ subprojects {
         plugin<JavaLibraryPlugin>()
         plugin<IdeaPlugin>()
         plugin<EclipsePlugin>()
-        plugin<MavenPublishPlugin>()
         plugin("com.diffplug.spotless")
         // plugin<SpotBugsPlugin>()
     }
