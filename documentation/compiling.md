@@ -21,5 +21,4 @@ A shorthand for the CLI [here](https://docs.gradle.org/current/userguide/command
 | Command                       | Description                                                                                        | 
 |-------------------------------|----------------------------------------------------------------------------------------------------|
 | `gradlew build`               | Compiles all modules and packages the plugin into one jar                                          |
-| `gradlew publishToMavenLocal` | Compiles and publishes all modules except the platform adapters to `.m2`                           |
 | `gradlew clean`               | Cleans the development workspace and clears caches. Note, you don't have to clean before you build |
