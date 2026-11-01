@@ -40,13 +40,10 @@ dependencies {
     api(projects.adapters.platform.platformInterface)
     api(projects.adapters.platform.paper)
 
-    if (!providers.environmentVariable("JITPACK").isPresent) {
-        // We don't need these adapters if we are only publishing an api jar
-        runtimeOnly(projects.adapters.plugins.worldedit)
-        runtimeOnly(projects.adapters.plugins.worldguard)
-        runtimeOnly(projects.adapters.plugins.essentials)
-        runtimeOnly(projects.adapters.platform.bukkitModern)
-    }
+    runtimeOnly(projects.adapters.plugins.worldedit)
+    runtimeOnly(projects.adapters.plugins.worldguard)
+    runtimeOnly(projects.adapters.plugins.essentials)
+    runtimeOnly(projects.adapters.platform.bukkitModern)
     testImplementation("io.papermc.paper:paper-api:1.20.4-R0.1-SNAPSHOT")
     testImplementation("com.github.seeseemelk:MockBukkit-v1.20:3.86.1")
     testImplementation("org.junit.jupiter:junit-jupiter-api:5.10.1")
@@ -58,29 +55,14 @@ repositories { mavenCentral() }
 tasks {
     processResources { filesMatching("plugin.yml") { expand("version" to project.version) } }
 
-    assemble {
-        if (!providers.environmentVariable("JITPACK").isPresent) {
-            dependsOn(shadowJar)
-        }
-    }
+    assemble { dependsOn(shadowJar) }
 
     jar {
         archiveBaseName.set("AreaShop-OG")
-        if (!providers.environmentVariable("JITPACK").isPresent) {
-            archiveClassifier.set("original")
-        } else {
-            archiveClassifier.set("")
-        }
-    }
-
-    if (providers.environmentVariable("JITPACK").isPresent) {
-        artifacts { archives(jar) }
+        archiveClassifier.set("original")
     }
 
     java { withSourcesJar() }
-
-    val javaComponent = project.components["java"] as AdhocComponentWithVariants
-    javaComponent.withVariantsFromConfiguration(configurations["shadowRuntimeElements"]) { skip() }
 
     shadowJar {
         archiveClassifier.set("")
